@@ -14,6 +14,7 @@
 <title><?php woo_title(); ?></title>
 <?php woo_meta(); ?>
 <link rel="pingback" href="<?php echo esc_url( get_bloginfo( 'pingback_url' ) ); ?>" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
 <?php wp_head(); ?>
 <?php woo_head(); ?>
 </head>

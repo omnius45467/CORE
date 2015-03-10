@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-	<main role="main">
+	<main role="main" class="row">
 		<!-- section -->
-		<section>
+		<section class="container">
 
 			<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
 

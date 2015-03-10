@@ -11,7 +11,7 @@
 
 get_header(); ?>
 
-    <div id="content">
+    <div id="content" class="container">
 
     	<?php woo_main_before(); ?>
 
