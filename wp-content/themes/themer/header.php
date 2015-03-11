@@ -26,7 +26,7 @@
 	<body <?php body_class(); ?> class="container">
 
 			<!-- header -->
-			<header class="header clear" role="banner">
+			<header id="home" class="header clear" role="banner">
 <div class="row">
 	
 
