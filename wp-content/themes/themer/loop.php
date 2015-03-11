@@ -5,8 +5,8 @@
 
 		<?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
 				<?php the_post_thumbnail(array(1200,500)); // Declare pixel size you need inside the array ?>
-			<span class="slider-caption col-md-9">
-				<h2><?php echo the_content();?></h2>
+			<span class="slider-caption col-md-7">
+				<h3><?php echo the_content();?></h3>
 			</span>
 
 		<?php endif; ?>
@@ -19,10 +19,10 @@
 	<div class="row">
 		
 
-	<div class="container-fluid">
+<!--	<div class="container-fluid">-->
 
 
-			<div class="col-md-8 col-md-offset-2 <?php echo $post->post_name;?>">
+			<div id="books" class="col-sm-8 col-offset-2 col-md-8 col-md-offset-2 <?php echo $post->post_name;?>">
 				<h2>Books</h2>
 
 				<?php
@@ -39,19 +39,20 @@
 
 				if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
 					?>
-					<div class="col-md-4">
+					<div class="col-sm-12 col-md-4">
 						<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );
 						?>
 						<img src=" <?php echo $src[0];?> " alt=""/>
 
-						<div class="col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0">
-							<h2 class="service-title"><span><?php the_title();?></span></h2>
+						<div class="col-md-12 col-md-offset-0">
+							<h4 class="service-title"><?php the_title();?></h4>
 							<?php the_content();?>
 						</div>
 					</div>
 				<?php endwhile; endif; wp_reset_postdata(); ?>
+				<br/>
 			</div>
-
+		
 			<?php
 			$type = 'about';
 			$args = array(
@@ -66,7 +67,7 @@
 			if ($my_query->have_posts()): while($my_query->have_posts()): $my_query->the_post();
 				?>
 				<?php 	$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,500 ), false, '' );?>
-				<div class="about col-md-12">
+				<div id="about" class="about col-md-12">
 
 					<div class="col-sm-12 col-sm-offset-0 col-md-5 col-md-offset-2" >
 						<h2 class="about-title"><?php the_title();?></h2>
@@ -77,7 +78,7 @@
 					</div>
 					<div class="col-md-5">
 
-						<img class="houses col-md-12" src="<?php echo $src[0];?>"/>
+						<img class="houses" src="<?php echo $src[0];?>"/>
 
 					</div>
 				</div>	
@@ -86,7 +87,7 @@
 			<?php endwhile; endif; wp_reset_postdata(); ?>
 
 		<!--End Content-->
-	</div>
+<!--	</div>-->
 	</div>
 <?php else: ?>
 

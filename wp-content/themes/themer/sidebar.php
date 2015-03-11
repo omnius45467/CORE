@@ -1,5 +1,5 @@
 <!-- sidebar -->
-<div class="container">
+<div class="container-fluid">
 	
 
 <aside class=" col-md-8 col-md-offset-2 sidebar" role="complementary">
@@ -13,7 +13,8 @@
 		<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
 	</div>
 	<br/>
-	&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?> <?php _e('Solutions Group'); ?>
+	<br/>
+	<p>&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?> <?php _e('Solutions Group'); ?></p>
 
 </aside>
 </div>
