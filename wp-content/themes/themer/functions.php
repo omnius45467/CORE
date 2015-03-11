@@ -127,6 +127,9 @@ function html5blank_styles()
     wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/dist/css/bootstrap.css', array(), '1.0', 'all');
     wp_enqueue_style('bootstrap'); // Enqueue it!
 
+    wp_register_style('animate', get_template_directory_uri() . '/animate/animate.css', array(), '1.0', 'all');
+    wp_enqueue_style('animate'); // Enqueue it!
+
     wp_register_style('core', get_template_directory_uri() . '/core.css', array(), '1.0', 'all');
     wp_enqueue_style('core'); // Enqueue it!
 }

@@ -27,12 +27,14 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
+<div class="row">
+	
 
 			<div class="container">
-				<div class="col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 blank"></div>
+
 
 					<!-- logo -->
-					<div class="col-sm-4 col-md-4 logo">
+					<div class="col-md-offset-4 col-md-4 logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/core_logo.png" alt="Logo" class="logo-img">
@@ -40,9 +42,8 @@
 					</div>
 					<!-- /logo -->
 
-				<div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1 blank"></div>
 			</div>
-
+</div>
 
 
 <!-- <nav-->

@@ -14,8 +14,14 @@
 	</div>
 	<br/>
 	<br/>
-	<p>&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?> <?php _e('Solutions Group'); ?></p>
 
 </aside>
+
 </div>
+<br/>
+<div class="copyright col-md-10 col-md-offset-2">
+	<p>&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?> <?php _e('Solutions Group'); ?></p>
+
+</div>
+
 <!-- /sidebar -->

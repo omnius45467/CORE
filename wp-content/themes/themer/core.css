@@ -1,10 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
 body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
 }
+h2 {
+  color: #094b89;
+  font-size: 30px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 900;
+}
+h3 {
+  color: #094b89;
+  font-size: 30px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 900;
+}
+h4,
+h5 {
+  font-family: 'PT Sans', sans-serif, bold;
+  font-weight: 700;
+}
+p,
+a {
+  font-family: 'PT Sans', sans-serif, bold;
+  font-weight: 700;
+}
 .logo {
-  margin: 5px auto;
+  padding: 5px;
+  text-align: center;
 }
 .navbar {
   margin: 0;
@@ -20,12 +45,18 @@ body {
   color: #fff;
 }
 .navbar .navbar-toggle {
-  color: #fff;
+  color: #fff !important;
   border: none;
 }
 .navbar .navbar-toggle:hover {
   background: #0099cc;
   color: #fff;
+  border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-default {
   border: none;
 }
 .navbar-default .navbar-nav > li > a {
@@ -46,6 +77,9 @@ body {
   color: #999999;
   font-size: 1em;
 }
+#books .col-lg-4 {
+  padding: 0;
+}
 .about {
   background: #eef6f8;
   font-size: 1.1em;
@@ -55,15 +89,22 @@ body {
 }
 .about .houses {
   float: right;
+  padding-top: 20px;
 }
 .about img {
   float: right;
 }
+.about .about-text p {
+  padding: 5px;
+}
 footer {
-  background: #0099cc;
+  background: #0099cc !important;
   color: #fff;
   line-height: 1.5em;
   padding: 20px 0 20px 0;
+}
+footer h3 {
+  color: #fff;
 }
 footer a {
   color: #fff;
@@ -71,4 +112,25 @@ footer a {
 }
 footer p {
   font-weight: 700;
+}
+footer .copyright {
+  padding-left: 25px;
+  font-size: 10px;
+  line-height: 10px;
+}
+footer .col-md-3 {
+  padding-left: 0;
+}
+@media screen and (max-width: 600px) {
+  .houses {
+    display: none;
+  }
+  .about {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .houses {
+    display: none;
+  }
 }

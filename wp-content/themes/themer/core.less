@@ -1,3 +1,8 @@
+
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
 body{
   overflow-x: hidden;
   padding:0;
@@ -5,98 +10,174 @@ body{
   
 }
 
-.logo{
- margin:5px auto;
-
+h2{
+  color:#094b89;
+  font-size:30px;
+  font-family: 'EB Garamond', serif;
+  font-weight:900;
+}
+h3{
+  color:#094b89;
+  font-size:30px;
+  font-family: 'EB Garamond', serif;
+  font-weight:900;
   
 }
-.navbar{
-  margin:0;
-  background:#0099cc;
-  color:#fff;
-  border-bottom:0;
-   ul li a{
+
+h4, h5{
+//  font-size: 20px;
+  font-family: 'PT Sans', sans-serif, bold;
+  font-weight:700;
+  
+}
+p, a{
+  font-family: 'PT Sans', sans-serif, bold;
+  font-weight:700;
+  
+}
+
+
+  .logo{
+    padding:5px;
+    text-align:center;
+
+  }
+  .navbar{
+    margin:0;
+    background:#0099cc;
+    color:#fff;
+    border-bottom:0;
+    ul li a{
       color:#fff;
 
     }
-  li:hover{
-    background: #fabe2b;
-    color:#fff;
-    
+    li:hover{
+      background: #fabe2b;
+      color:#fff;
+
+    }
+    .navbar-toggle{
+      color:#fff !important;
+      border:none;
+
+    }
+    .navbar-toggle:hover{
+      background:#0099cc;
+      color:#fff;
+      border:none;
+
+    }
   }
-  .navbar-toggle{
-    color:#fff;
-    border:none;
-    
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
   }
-  .navbar-toggle:hover{
-    background:#0099cc;
-    color:#fff;
+  .navbar-default{
     border:none;
 
   }
-}
-.navbar-default .navbar-nav > li > a {
-  color: #fff;
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+
+  }
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #fff;
+
+  }
+  .slider-caption{
+    position:absolute;
+
+    right:150px;
+
+  }
+
+  #books{
+//    padding:20px;
+    h4{
+      color:#851a1e;
+      font-size:1.2em;
+
+    }
+    h5{
+      color:#999999;
+      font-size:1em;
+
+    }
+.col-lg-4{
+  padding:0;
   
 }
-.navbar-default .navbar-nav > li > a:hover {
-  color: #fff;
-
-}
-.slider-caption{
-  position:absolute;
-
-  right:150px;
-
-}
-
-#books{
-  h4{
-    color:#851a1e;
-    font-size:1.2em;
-    
   }
-  h5{
-    color:#999999;
-    font-size:1em;
-    
-  }
-  
-}
 
-.about{
-  background:#eef6f8;
-  font-size:1.1em;
-  .col-md-5{
-    padding-right:0;
-    
+  .about{
+
+    background:#eef6f8;
+    font-size:1.1em;
+
+    .col-md-5{
+      padding-right:0;
+
+    }
+    .houses{
+      float:right;
+      padding-top:20px;
+
+    }
+    img{
+      float:right;
+
+    }
+    .about-text p{
+      padding:5px;
+
+    }
   }
+
+
+
+  footer{
+    background:#0099cc !important;
+    color:#fff;
+    line-height:1.5em;
+    padding:20px 0 20px 0;
+
+    h3{
+      color:#fff;
+      
+    }
+    a{
+      color:#fff;
+      font-weight:500;
+    }
+    p{
+      font-weight:700;
+
+    }
+    .copyright{
+      padding-left:25px;
+      font-size:10px;
+      line-height:10px;
+    }
+    .col-md-3{
+      padding-left:0;
+      
+    }
+
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .houses{
+      display:none;
+
+    }
+    .about{
+    padding:20px;
+    }
+  }
+
+@media screen and (max-width: 900px) {
   .houses{
-    float:right;
+    display:none;
 
   }
-  img{
-    float:right;
-
-  }
-}
-
-
-
-footer{
-  background:#0099cc;
-  color:#fff;
-  line-height:1.5em;
-  padding:20px 0 20px 0;
-  
-  a{
-    color:#fff;
-    font-weight:500;
-  }
-  p{
-    font-weight:700;
-    
-  }
-  
 }
