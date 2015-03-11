@@ -1,0 +1,19 @@
+{
+  "name": "CORE",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sammyboy45467/CORE",
+  "authors": [
+    "sammyboy45467 <jeremy.robles56@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

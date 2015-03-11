@@ -100,6 +100,9 @@ function html5blank_header_scripts()
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
+
+        wp_register_script('bootstrap', get_template_directory_uri() . '/bootstrap/dist/js/bootstrap.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('bootstrap'); // Enqueue it!
     }
 }
 
@@ -120,6 +123,12 @@ function html5blank_styles()
 
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
+
+    wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/dist/css/bootstrap.css', array(), '1.0', 'all');
+    wp_enqueue_style('bootstrap'); // Enqueue it!
+
+    wp_register_style('core', get_template_directory_uri() . '/core.css', array(), '1.0', 'all');
+    wp_enqueue_style('core'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
